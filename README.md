@@ -32,9 +32,12 @@ Teori yang paling umum digunakan untuk menghapus latar belakang pada pengolahan 
 4.Metode pemisahan bayangan: Jika latar belakang dan objek menghasilkan bayangan yang berbeda, maka metode ini dapat digunakan untuk memisahkan objek dari latar 
   belakang dengan menghapus bayangan.
 
-Metode pemisahan berdasarkan tepi: Jika objek dan latar belakang memiliki perbedaan yang jelas dalam kontur atau tepinya, metode pemisahan berdasarkan tepi dapat digunakan. Metode ini mencakup operasi deteksi tepi, seperti operator Canny atau operator Sobel.
+5.Metode pemisahan berdasarkan tepi: Jika objek dan latar belakang memiliki perbedaan yang jelas dalam kontur atau tepinya, metode pemisahan berdasarkan tepi 
+  dapat digunakan. Metode ini mencakup operasi deteksi tepi, seperti operator Canny atau operator Sobel.
 
-Metode pemisahan berdasarkan pemodelan ruang objek: Pendekatan ini melibatkan pemodelan objek 3D menggunakan teknik seperti stereo vision atau pemindaian citra. Dalam metode ini, latar belakang dapat dihapus dengan membangun model 3D objek dan memisahkan objek dari latar belakang berdasarkan geometri atau struktur objek tersebut.
+6.Metode pemisahan berdasarkan pemodelan ruang objek: Pendekatan ini melibatkan pemodelan objek 3D menggunakan teknik seperti stereo vision atau pemindaian 
+  citra. Dalam metode ini, latar belakang dapat dihapus dengan membangun model 3D objek dan memisahkan objek dari latar belakang berdasarkan geometri atau 
+  struktur objek tersebut.
 
 Pendekatan di atas hanya merupakan beberapa contoh metode yang digunakan dalam teori penghapusan latar belakang pada pengolahan citra. Pemilihan metode yang tepat tergantung pada sifat citra, karakteristik objek dan latar belakang, serta kebutuhan aplikasi yang ingin dicapai.
 
