@@ -18,6 +18,26 @@ Selain itu, teknik penghapusan latar belakang juga dapat dikombinasikan dengan m
 
 Penting untuk dicatat bahwa penghapusan latar belakang dalam citra dapat menjadi tugas yang kompleks tergantung pada kompleksitas gambar dan kondisi pencahayaan. Metode yang lebih maju dan kompleks seperti pemrosesan semantik, segmentasi berbasis instan (instance-based segmentation), atau metode berbasis jaringan saraf dapat digunakan untuk hasil yang lebih baik.
 
+Teori yang paling umum digunakan untuk menghapus latar belakang pada pengolahan citra adalah metode segmentasi berdasarkan perbedaan warna atau kecerahan. Ada beberapa pendekatan yang umum digunakan dalam teori ini, termasuk:
+
+1.Thresholding: Metode ini melibatkan penentuan ambang batas di mana piksel dianggap sebagai latar belakang atau objek berdasarkan tingkat kecerahan atau   
+  warnanya. Jika nilai piksel melebihi ambang batas, piksel dianggap sebagai bagian dari objek; jika tidak, piksel dianggap sebagai bagian latar belakang.
+
+2.Metode pemodelan warna: Pendekatan ini melibatkan pemodelan distribusi warna di ruang warna untuk membedakan objek dan latar belakang. Metode ini mencakup 
+  pemodelan histogram, seperti pemodelan Gauss, dan penggunaan pengklasifikasi, seperti K-means atau metode pemisahan Gaussian.
+
+3.Penggunaan chroma keying: Metode ini melibatkan penggunaan latar belakang berwarna merata yang kontras dengan objek yang ingin dipertahankan. Dalam pengolahan 
+  pasca-produksi, latar belakang berwarna tersebut dapat diganti dengan objek atau latar belakang yang diinginkan.
+
+4.Metode pemisahan bayangan: Jika latar belakang dan objek menghasilkan bayangan yang berbeda, maka metode ini dapat digunakan untuk memisahkan objek dari latar 
+  belakang dengan menghapus bayangan.
+
+Metode pemisahan berdasarkan tepi: Jika objek dan latar belakang memiliki perbedaan yang jelas dalam kontur atau tepinya, metode pemisahan berdasarkan tepi dapat digunakan. Metode ini mencakup operasi deteksi tepi, seperti operator Canny atau operator Sobel.
+
+Metode pemisahan berdasarkan pemodelan ruang objek: Pendekatan ini melibatkan pemodelan objek 3D menggunakan teknik seperti stereo vision atau pemindaian citra. Dalam metode ini, latar belakang dapat dihapus dengan membangun model 3D objek dan memisahkan objek dari latar belakang berdasarkan geometri atau struktur objek tersebut.
+
+Pendekatan di atas hanya merupakan beberapa contoh metode yang digunakan dalam teori penghapusan latar belakang pada pengolahan citra. Pemilihan metode yang tepat tergantung pada sifat citra, karakteristik objek dan latar belakang, serta kebutuhan aplikasi yang ingin dicapai.
+
 ## Baris program
 
 from rembg import remove
