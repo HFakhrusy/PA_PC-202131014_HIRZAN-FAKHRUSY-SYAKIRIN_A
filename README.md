@@ -63,59 +63,28 @@ Dengan menggunakan library rembg pada Jupyter Notebook, Anda dapat secara efisie
 
 
 
-# Baris program
-from rembg import remove
-from PIL import Image
-import matplotlib.pyplot as a
-input_path = 'teko.jpg'
-output_path = 'newteko.png'
-input_image = Image.open(input_path)
-a.subplot(1, 2, 1)
-a.imshow(input_image)
-a.title('Original')
-output_image = remove(input_image)
-a.subplot(1, 2, 2)
-a.imshow(output_image)
-a.title(' Removed Background')
-output_image.save(output_path)
-a.tight_layout()
-a.show()
 
-## penjelasan baris program
-1.	from rembg import remove: Mengimpor fungsi remove dari library rembg. Fungsi ini digunakan untuk menghapus latar belakang gambar.
+# penjelasan baris program
 
-2.	from PIL import Image: Mengimpor class Image dari library PIL. Class ini digunakan untuk membaca dan menyimpan gambar.
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/d8bc757b-b720-4e79-956e-dc536f761ec2)
 
-3.	input_path = 'teko.jpg': Menyimpan path (lokasi) file gambar yang akan diolah. Dalam contoh ini, file gambar bernama "teko.jpg" berada dalam direktori yang sama dengan script program.
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/7bb89d04-5322-4745-8dcf-682378197ea2)
+Baris ini mengimpor library matplotlib.pyplot dengan alias plt, yang akan digunakan untuk menampilkan gambar.
 
-4.	output_path = 'newteko.png': Menyimpan path (lokasi) file hasil setelah penghapusan latar belakang. Dalam contoh ini, file hasil akan disimpan dengan nama "newteko.png" dalam direktori yang sama dengan script program.
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/62c01379-4b36-44f1-9f10-1842d2a38f58)
+Baris ini mendefinisikan variabel input_path dan output_path yang berisi path (lokasi) file gambar masukan dan keluaran.
 
-5.	input_image = Image.open(input_path): Membuka gambar menggunakan fungsi open dari class Image dengan memasukkan path gambar sebagai argumen. Gambar tersebut disimpan dalam variabel input_image.
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/8db53d0c-97fe-46ae-b43c-a18f0fd4eef4)
+Baris ini membuka file gambar dengan menggunakan fungsi open dari library PIL (Pillow) dan menyimpannya ke dalam variabel input_image. Library PIL (Pillow) digunakan untuk memanipulasi gambar.
 
-6.	a.subplot(1, 2, 1): Membuat subplot dengan ukuran 1 baris dan 2 kolom, dan memilih subplot pertama sebagai posisi saat ini untuk menampilkan gambar.
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/ec0e1094-b46b-42d9-a323-3404a5bf6431)
+Baris ini menggunakan fungsi subplot untuk membuat subplot dengan 1 baris dan 2 kolom, kemudian memilih subplot pertama. Fungsi imshow digunakan untuk menampilkan gambar input_image pada subplot yang dipilih. Baris terakhir menggunakan fungsi title untuk memberikan judul pada subplot.
 
-7.	a.imshow(input_image): Menampilkan gambar asli menggunakan fungsi imshow dari library matplotlib.pyplot dengan memasukkan gambar asli sebagai argumen.
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/921d3381-1c97-4ddd-a165-f5f05a515888)
+Baris ini menggunakan fungsi subplot untuk memilih subplot kedua, kemudian menggunakan imshow untuk menampilkan gambar output_image pada subplot tersebut. Fungsi title digunakan untuk memberikan judul pada subplot.
 
-8.	a.title('Original'): Memberikan judul "Original" pada subplot pertama.
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/aeab20f4-a3d3-433b-af63-e8b5d1a0deb4)
+Baris ini menggunakan metode save pada objek output_image untuk menyimpan gambar dengan latar belakang yang dihapus ke dalam file yang ditentukan oleh output_path.
 
-9.	output_image = remove(input_image): Menghapus latar belakang gambar menggunakan fungsi remove dari library rembg. Gambar hasil penghapusan disimpan dalam variabel output_image.
-
-10.	a.subplot(1, 2, 2): Memilih subplot kedua sebagai posisi saat ini untuk menampilkan gambar hasil penghapusan latar belakang.
-
-11.	a.imshow(output_image): Menampilkan gambar hasil penghapusan latar belakang menggunakan fungsi imshow dengan memasukkan gambar hasil sebagai argumen.
-
-12.	a.title('Removed Background'): Memberikan judul "Removed Background" pada subplot kedua.
-
-13.	output_image.save(output_path): Menyimpan gambar hasil penghapusan latar belakang ke path yang telah ditentukan menggunakan fungsi save dari class Image. Gambar tersebut akan disimpan dalam format PNG sesuai dengan ekstensi file "newteko.png".
-
-14.	a.tight_layout(): Mengatur tata letak subplot agar tampilan lebih rapi.
-
-15.	a.show(): Menampilkan subplot secara keseluruhan.
-
-
-
-
-
-
-
-
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/92a72839-17a1-440a-bf36-50b516814968)
+Baris ini menggunakan fungsi tight_layout untuk mengatur tata letak subplot secara otomatis agar sesuai, kemudian menggunakan show untuk menampilkan gambar dengan subplot pada jendela grafik matplotlib.
