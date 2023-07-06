@@ -55,6 +55,22 @@ Perlu dicatat bahwa penghapusan latar belakang dengan menggunakan model deep lea
 
 Pendekatan di atas hanya merupakan beberapa contoh metode yang digunakan dalam teori penghapusan latar belakang pada pengolahan citra. Pemilihan metode yang tepat tergantung pada sifat citra, karakteristik objek dan latar belakang, serta kebutuhan aplikasi yang ingin dicapai.
 
+Beberapa arsitektur model deep learning yang digunakan untuk penghapusan latar belakang meliputi:
+
+U-Net: Arsitektur U-Net menggunakan jaringan saraf konvolusi (CNN) dengan struktur yang simetris dan memiliki jalur pendek (skip connections) yang memungkinkan penggabungan informasi fitur dari lapisan yang lebih tinggi dengan lapisan yang lebih rendah. U-Net umumnya digunakan dalam tugas segmentasi piksel-ke-piksel dan juga dapat diterapkan untuk penghapusan latar belakang.
+
+Mask R-CNN: Mask R-CNN adalah model deep learning yang dikembangkan berdasarkan arsitektur Faster R-CNN, yang dirancang untuk tugas deteksi objek dan segmentasi instan. Mask R-CNN memungkinkan pengenalan dan segmentasi objek yang akurat, termasuk penghapusan latar belakang, dengan memberikan prediksi piksel-per-piksel pada gambar.
+
+DeepLab: DeepLab adalah arsitektur model deep learning yang dirancang untuk segmentasi gambar dengan menggunakan metode atrous convolution dan penggabungan kontekstual dengan dilated convolution. DeepLab dapat menghasilkan segmentasi objek yang detail dan juga dapat digunakan untuk menghapus latar belakang.
+
+Proses pelatihan model deep learning untuk penghapusan latar belakang melibatkan penggunaan dataset yang berisi gambar dengan objek dan latar belakang yang berbeda. Label objek dan latar belakang pada dataset digunakan sebagai ground truth untuk melatih model agar dapat mempelajari perbedaan antara objek dan latar belakang.
+
+Selama pelatihan, model akan mengoptimalkan parameter-parameternya menggunakan algoritma pembelajaran seperti backpropagation untuk meminimalkan kesalahan antara prediksi model dan ground truth.
+
+Setelah pelatihan selesai, model dapat digunakan untuk menghapus latar belakang dari gambar baru. Gambar tersebut akan diinputkan ke dalam model, dan model akan menghasilkan prediksi piksel-per-piksel untuk memisahkan objek dan latar belakang. Metode ini memungkinkan penghapusan latar belakang yang lebih akurat dan presisi.
+
+
+
  ## Tujuan dari Remove Background
  Fungsi utama dari RMBG adalah untuk mengekstrak objek atau subjek utama dari sebuah gambar dengan menghilangkan piksel latar belakang.
 
@@ -111,4 +127,6 @@ Baris ini menggunakan metode save pada objek output_image untuk menyimpan gambar
 Baris ini menggunakan fungsi tight_layout untuk mengatur tata letak subplot secara otomatis agar sesuai, kemudian menggunakan show untuk menampilkan gambar dengan subplot pada jendela grafik matplotlib.
 
 # SUMBER TEORI
-Liu, X., Zhang, S., Liu, W., & Yang, J. (2020). Image background removal based on deep learning. Multimedia Tools and Applications, 79(1-2), 201-225. DOI:
+Liu, X., Zhang, S., Liu, W., & Yang, J. (2020). Image background removal based on deep learning. Multimedia Tools and Applications, 79(1-2), 201-225.
+
+He, K., Gkioxari, G., Dollár, P., & Girshick, R. (2017). Mask R-CNN. Proceedings of the IEEE International Conference on Computer Vision (ICCV), 2961-2969.
