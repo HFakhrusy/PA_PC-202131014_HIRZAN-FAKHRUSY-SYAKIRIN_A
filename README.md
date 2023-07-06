@@ -52,7 +52,14 @@ RMBG sering digunakan dalam berbagai aplikasi seperti fotografi, desain grafis, 
 Library rembg pada Jupyter Notebook adalah sebuah library yang digunakan untuk menghapus latar belakang dari gambar menggunakan model deep learning. Library ini berfokus pada penghapusan latar belakang yang kompleks, seperti rambut atau objek dengan tepi yang rumit.
 
 Instalasi: Pertama, pastikan Anda telah menginstal library rembg. Anda dapat melakukannya dengan menjalankan perintah berikut di Jupyter Notebook:
+
 ![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/0f21ee82-aa43-4217-a0d3-ed5443098223)
+
+Impor library: Setelah menginstal, impor library rembg ke dalam Jupyter Notebook:
+
+![image](https://github.com/HFakhrusy/PA_PC-202131014_HIRZAN-FAKHRUSY-SYAKIRIN_A/assets/115157262/bca87342-8043-4542-9832-ac768d914aa7)
+
+Dengan menggunakan library rembg pada Jupyter Notebook, Anda dapat secara efisien menghapus latar belakang dari gambar dengan hasil yang berkualitas tinggi. Pastikan Anda memiliki model deep learning yang sesuai yang digunakan oleh library ini, seperti model u2net atau u2netp, yang dapat Anda unduh dan gunakan dengan library rembg.
 
 
 
